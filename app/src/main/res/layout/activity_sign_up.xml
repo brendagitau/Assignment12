@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#A6F57F17"
+    tools:context=".signUp">
+
+    <ImageView
+        android:id="@+id/ivName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/signup" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginEnd="114dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="SIGN UP"
+        android:textColor="#CC9667"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivName"
+        app:layout_constraintStart_toStartOf="@+id/ivName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:background="#5CF57F17"
+        android:backgroundTint="#80F57F17"
+        app:layout_constraintBottom_toBottomOf="@+id/tilName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilName"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/name" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tilName"
+
+        android:layout_width="252dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="#FFCC9667"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#F57F17"
+        android:textColorHint="#FFCC9667"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivName" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tilPassword"
+
+        android:layout_width="243dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#FFCC9667"
+        android:hint="Password"
+        android:inputType="textVisiblePassword|textPersonName"
+        android:textColor="#F57F17"
+        android:textColorHint="#FFCC9667"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spGender" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="76dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#5CF57F17"
+        android:backgroundTint="#80F57F17"
+        app:layout_constraintBottom_toBottomOf="@+id/tilEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilEmail"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/email" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tilEmail"
+        android:layout_width="243dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFCC9667"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#100F0F"
+        android:textColorHint="#FFCC9667"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivName"
+        app:layout_constraintTop_toBottomOf="@+id/tilName" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:background="#5CF57F17"
+        android:backgroundTint="#80F57F17"
+        app:layout_constraintBottom_toBottomOf="@+id/tilPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilPhone"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/phone" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tilPhone"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFCC9667"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textColor="#F57F17"
+        android:textColorHint="#FFCC9667"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="87dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="#5CF57F17"
+        android:backgroundTint="#80F57F17"
+        app:layout_constraintBottom_toBottomOf="@+id/spGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spGender"
+        app:srcCompat="@drawable/gender" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="91dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:background="#5CF57F17"
+        android:backgroundTint="#80F57F17"
+        app:layout_constraintBottom_toBottomOf="@+id/tilPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tilPassword"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/password" />
+
+    <Button
+        android:id="@+id/btnlogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="28dp"
+        android:background="#0CF57F17"
+        android:text="LOGIN"
+        android:textColor="#F57F17"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+
+    <Spinner
+        android:id="@+id/spGender"
+        android:layout_width="219dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/tilPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
